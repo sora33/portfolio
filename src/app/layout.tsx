@@ -14,6 +14,28 @@ export const metadata: Metadata = {
     template: '%s | Hiranuma Shuya',
   },
   description: 'I’m an Japanese Software Engineer.',
+  openGraph: {
+    title: {
+      default: 'Hiranuma Shuya',
+      template: '%s | Hiranuma Shuya',
+    },
+    description: 'I’m an Japanese Software Engineer.',
+    url: process.env.NEXT_PUBLIC_SITE_URL,
+    siteName: 'Hiranuma Shuya',
+    images: [
+      {
+        url: '/portfolio.jpg',
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  generator: 'Next.js',
+  keywords: ['エンジニア', 'デザイン', 'プログラミング', 'システム開発', 'WEBアプリケーション', 'DX', 'IT'],
+  authors: [{ name: 'Hiranuma Shuya' }],
+  creator: 'Hiranuma Shuya',
 }
 
 export const viewport: Viewport = {
