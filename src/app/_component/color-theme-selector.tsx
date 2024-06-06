@@ -13,11 +13,7 @@ export const ColorThemeSelector = () => {
   }, [])
 
   if (!mounted) {
-    return (
-      <div className="rounded border">
-        <div className="size-6" />
-      </div>
-    )
+    return <div className="rounded border border-slate-300 dark:border-slate-700 size-6" />
   }
 
   return (

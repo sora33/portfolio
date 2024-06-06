@@ -13,7 +13,7 @@ export const FaceImage = () => {
   }, [])
 
   if (!mounted) {
-    return <div className="rounded-full border size-[120px]" />
+    return <div className="rounded-full border border-slate-300 dark:border-slate-700 size-[120px]" />
   }
 
   return (
