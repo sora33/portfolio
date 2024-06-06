@@ -9,7 +9,7 @@ export const ButtonVariants = tv({
       base: 'w-full max-w-[140px] md:max-w-[200px]',
     },
     variant: {
-      base: 'bg-orange-500 text-white hover:bg-orange-600 transition-all duration-300',
+      base: 'bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300',
       subtle: 'bg-orange-100 text-orange-500 hover:bg-orange-200 transition-all duration-300',
     },
   },

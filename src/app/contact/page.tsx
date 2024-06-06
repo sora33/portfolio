@@ -42,15 +42,21 @@ export default function Page({ searchParams }: Props) {
         <form action={sendEmail}>
           <div className="grid gap-8">
             <div className="grid gap-1">
-              <label className={labelStyle}>お名前</label>
+              <label className={labelStyle} htmlFor="name">
+                お名前
+              </label>
               <input type="text" name="name" required={true} className={inputStyle} />
             </div>
             <div className="grid gap-1">
-              <label className={labelStyle}>メールアドレス</label>
+              <label className={labelStyle} htmlFor="email">
+                メールアドレス
+              </label>
               <input type="email" name="email" required={true} className={inputStyle} />
             </div>
             <div className="grid gap-1">
-              <label className={labelStyle}>お問い合わせ内容</label>
+              <label className={labelStyle} htmlFor="message">
+                お問い合わせ内容
+              </label>
               <textarea
                 name="message"
                 placeholder="お問い合わせ内容をできるだけ詳細にお願いします。"
