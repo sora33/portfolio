@@ -21,6 +21,7 @@ export const ColorThemeSelector = () => {
       type="button"
       onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}
       className="size-6 text-orange-500 hover:text-orange-600"
+      aria-label={resolvedTheme === 'light' ? 'ダークモードに切り替え' : 'ライトモードに切り替え'}
     >
       {resolvedTheme === 'light' ? <SunIcon className="" /> : <MoonIcon className="" />}
     </button>
