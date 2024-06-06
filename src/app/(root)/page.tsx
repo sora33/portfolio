@@ -9,7 +9,7 @@ export default function Home() {
         <Title as="h1" className="">
           Hiranuma Shuya
         </Title>
-        <Text>Engineer・Product Manager</Text>
+        <Text>Software Engineer・Project Manager</Text>
       </div>
       <div className="grid gap-6">
         <Text>ものづくりが好きです。</Text>
