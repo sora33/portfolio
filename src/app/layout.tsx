@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Hiranuma Shuya',
     images: [
       {
-        url: '/portfolio.jpg',
+        url: 'portfolio/portfolio.jpg',
         width: 800,
         height: 600,
       },
