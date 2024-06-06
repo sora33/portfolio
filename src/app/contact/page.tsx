@@ -45,19 +45,20 @@ export default function Page({ searchParams }: Props) {
               <label className={labelStyle} htmlFor="name">
                 お名前
               </label>
-              <input type="text" name="name" required={true} className={inputStyle} />
+              <input type="text" id="name" name="name" required={true} className={inputStyle} />
             </div>
             <div className="grid gap-1">
               <label className={labelStyle} htmlFor="email">
                 メールアドレス
               </label>
-              <input type="email" name="email" required={true} className={inputStyle} />
+              <input type="email" id="email" name="email" required={true} className={inputStyle} />
             </div>
             <div className="grid gap-1">
               <label className={labelStyle} htmlFor="message">
                 お問い合わせ内容
               </label>
               <textarea
+                id="message"
                 name="message"
                 placeholder="お問い合わせ内容をできるだけ詳細にお願いします。"
                 required={true}
