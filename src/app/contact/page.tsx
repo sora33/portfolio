@@ -13,7 +13,7 @@ const inputStyle = `
 `
 const textareaStyle = `
   ${inputStyle}
-  h-[200px]
+  h-[160px] md:h-[200px]
 `
 type Props = {
   searchParams: Record<string, string | string[]>
@@ -40,24 +40,24 @@ export default function Page({ searchParams }: Props) {
         <Button href="/">トップに戻る</Button>
       ) : (
         <form action={sendEmail}>
-          <div className="grid gap-8">
+          <div className="grid gap-4 md:gap-8">
             <div className="grid gap-1">
               <label className={labelStyle} htmlFor="name">
                 お名前
               </label>
-              <input type="text" id="name" name="name" required={true} className={inputStyle} />
+              <input type="text" id="name" name="name" maxLength={256} required={true} className={inputStyle} />
             </div>
             <div className="grid gap-1">
               <label className={labelStyle} htmlFor="email">
                 メールアドレス
               </label>
-              <input type="email" id="email" name="email" required={true} className={inputStyle} />
+              <input type="email" id="email" name="email" maxLength={256} required={true} className={inputStyle} />
             </div>
             <div className="grid gap-1">
               <label className={labelStyle} htmlFor="message">
                 お問い合わせ内容
               </label>
-              <textarea id="message" name="message" required={true} className={textareaStyle} />
+              <textarea id="message" name="message" maxLength={1024} required={true} className={textareaStyle} />
             </div>
             <div className="flex justify-between">
               <Button type="submit">送信</Button>
