@@ -22,7 +22,7 @@ export default function Home() {
         </Title>
         <Text>これまで作ったものを紹介します。</Text>
       </div>
-      <div className="grid gap-8 md:grid-cols-2">
+      <div className="grid gap-8 sm:grid-cols-2">
         {data.map((item) => (
           <Link
             key={item.title}
@@ -30,7 +30,7 @@ export default function Home() {
             target="_blank"
             className="grid gap-2 no-underline group hover:-translate-y-[2px] transition-all duration-300"
           >
-            <Image src={item.image.src} alt={item.image.alt} width={800} height={420} objectFit="contain" />
+            <Image src={item.image.src} alt={item.image.alt} width={600} height={315} objectFit="contain" />
             <div className="group-hover:underline">
               <Title as="h2" size="md">
                 {item.title}

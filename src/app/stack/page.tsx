@@ -7,7 +7,7 @@ export default function Home() {
         <Title as="h1" className="">
           Stack
         </Title>
-        <Text>私が使用している技術を紹介します。</Text>
+        <Text>私が使用している技術やルーツを紹介します。</Text>
       </div>
       <div className="grid gap-6">
         <Text>これから実装します。</Text>

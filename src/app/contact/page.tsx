@@ -4,7 +4,7 @@ import { sendEmail } from '~/app/contact/_comoponent/actions'
 const labelStyle = 'text-sm font-bold text-slate-500 dark:text-slate-400'
 
 const inputStyle = `
-  flex h-10 w-full rounded-md px-3 py-2 text-sm
+  flex h-10 w-full rounded-md px-3 py-2 text-foreground
   border border-input bg-background ring-offset-background
   placeholder:text-slate-500 file:text-sm file:font-medium
   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
@@ -57,13 +57,7 @@ export default function Page({ searchParams }: Props) {
               <label className={labelStyle} htmlFor="message">
                 お問い合わせ内容
               </label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="お問い合わせ内容をできるだけ詳細にお願いします。"
-                required={true}
-                className={textareaStyle}
-              />
+              <textarea id="message" name="message" required={true} className={textareaStyle} />
             </div>
             <div className="flex justify-between">
               <Button type="submit">送信</Button>
