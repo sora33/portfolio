@@ -18,8 +18,8 @@ const data = [
 
 export default function Home() {
   return (
-    <div className="grid gap-12">
-      <div className="grid gap-2">
+    <div className="grid gap-8 md:gap-12">
+      <div className="grid gap-1 md:gap-2">
         <Title as="h1" className="">
           Article
         </Title>

@@ -3,6 +3,7 @@
 import { MoonIcon, SunIcon } from '@heroicons/react/24/outline'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
+import { Skeleton } from '~/app/_component/ui'
 
 export const ColorThemeSelector = () => {
   const [mounted, setMounted] = useState(false)
@@ -13,7 +14,7 @@ export const ColorThemeSelector = () => {
   }, [])
 
   if (!mounted) {
-    return <div className="rounded border border-slate-300 dark:border-slate-700 size-6" />
+    return <Skeleton className="size-6" />
   }
 
   return (

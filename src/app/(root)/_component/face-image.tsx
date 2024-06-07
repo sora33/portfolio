@@ -3,6 +3,7 @@
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import { Skeleton } from '~/app/_component/ui'
 
 export const FaceImage = () => {
   const [mounted, setMounted] = useState(false)
@@ -13,7 +14,7 @@ export const FaceImage = () => {
   }, [])
 
   if (!mounted) {
-    return <div className="rounded-full border border-slate-300 dark:border-slate-700 size-[120px]" />
+    return <Skeleton className="rounded-full size-[120px]" />
   }
 
   return (
