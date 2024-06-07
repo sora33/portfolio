@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Hiranuma Shuya',
     images: [
       {
-        url: 'portfolio/portfolio.jpg',
+        url: '/portfolio.jpg',
         width: 800,
         height: 600,
       },
@@ -59,7 +59,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={true}>
           <Header />
-          <main className="pb-24 md:pb-32 md:pt-8">
+          <main className="pb-32 md:pt-8">
             <Inner>{children}</Inner>
           </main>
           <Nav />
