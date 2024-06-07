@@ -6,10 +6,10 @@ export const TextVariants = tv({
   variants: {
     size: {
       xs: 'text-xs',
-      sm: 'text-sm',
-      md: 'text-md',
-      lg: 'text-2xl md:text-3xl',
-      xl: 'text-2xl md:text-4xl',
+      sm: 'text-sm md:text-base',
+      md: 'text-base',
+      lg: 'text-3xl md:text-3xl',
+      xl: 'text-3xl md:text-4xl',
       '2xl': 'text-2xl md:text-5xl',
     },
     color: {
