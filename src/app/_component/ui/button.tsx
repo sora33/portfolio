@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import type React from 'react'
 import { tv } from 'tailwind-variants'
+import { Spinner } from './spinner'
 
 export const ButtonVariants = tv({
-  base: 'px-3 py-2 rounded-lg inline-block text-center',
+  base: 'px-3 py-2 rounded-lg inline-block text-center flex items-center justify-center',
   variants: {
     size: {
       base: 'w-full max-w-[140px] md:max-w-[200px]',
@@ -22,6 +23,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'base'
   href?: string
   target?: string
+  isLoading?: boolean
 }
 
 export const Button: React.FC<Props> = ({
@@ -31,6 +33,7 @@ export const Button: React.FC<Props> = ({
   variant = 'base',
   href = '',
   target = '',
+  isLoading = false,
   ...buttonProps
 }) => {
   return href ? (
@@ -39,6 +42,7 @@ export const Button: React.FC<Props> = ({
     </Link>
   ) : (
     <button {...buttonProps} className={ButtonVariants({ size, variant, className })}>
+      {isLoading && <Spinner />}
       {children}
     </button>
   )
