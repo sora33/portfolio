@@ -9,7 +9,7 @@ const labelStyle = 'text-sm font-bold text-slate-500 dark:text-slate-400'
 
 const inputStyle = `
   flex h-10 w-full rounded-md px-3 py-2 text-foreground
-  border border-input bg-background ring-offset-background
+  border border-slate-400 bg-background ring-offset-background
   placeholder:text-slate-500 file:text-sm file:font-medium
   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
   file:border-0 file:bg-transparent

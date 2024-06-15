@@ -52,20 +52,18 @@ export const Nav = () => {
     >
       <div className="flex p-1 px-4 relative overflow-hidden w-max gap-2">
         {navItems.map((item) => {
+          const isActive = item.href === '/' ? pathname === item.href : pathname.startsWith(item.href)
+
           return (
             <Link
               key={item.label}
               href={item.href}
               title={item.label}
               aria-label={item.label}
-              aria-current={pathname === item.href ? 'page' : undefined}
+              aria-current={isActive ? 'page' : undefined}
               tabIndex={0}
               className={`size-9 p-2 text-foreground/80 rounded-full hover:bg-foreground/10 hover:text-foreground transition-all duration-200
-                ${
-                  pathname === item.href
-                    ? 'text-orange-500 bg-orange-500/10 hover:bg-orange-500/10 hover:text-orange-500'
-                    : ''
-                }
+                ${isActive ? 'text-orange-500 bg-orange-500/10 hover:bg-orange-500/10 hover:text-orange-500' : ''}
                 `}
             >
               {item.icon}

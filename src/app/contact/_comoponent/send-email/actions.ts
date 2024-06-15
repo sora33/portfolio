@@ -52,5 +52,5 @@ export const sendEmail = async (_: State, formData: FormData): Promise<State> =>
     return { message: 'メール送信に失敗しました。再度お問い合わせください。' }
   }
 
-  redirect('/contact?sent=true')
+  redirect('/contact/complete')
 }
